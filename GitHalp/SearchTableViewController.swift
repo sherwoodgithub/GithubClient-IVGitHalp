@@ -13,21 +13,16 @@ class SearchTableViewController: UITableViewController, UITableViewDataSource, U
   @IBOutlet var tableViewBlarg: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
   
-  var networkController : NetworkController!
-  
     override func viewDidLoad() {
         super.viewDidLoad()
       self.tableViewBlarg.dataSource = self
       self.searchBar.delegate = self
-      
-      let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-      self.networkController = appDelegate.networkController
 
   }
 
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-    println(searchBar.text)
-    self.networkController.fetchSearchTermRepositories(searchBar.text, callback: { (repositories, errorDescription) -> (Void) in
+    //println(searchBar.text)
+    NetworkController.sharedNetworkController.fetchSearchTermRepositories(searchBar.text, callback: { (repositories, errorDescription) -> (Void) in
 
     })
     searchBar.resignFirstResponder()
