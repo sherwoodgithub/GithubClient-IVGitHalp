@@ -10,7 +10,6 @@ import UIKit
 
 class SearchUsersViewController: UIViewController, UICollectionViewDataSource, UISearchBarDelegate, UINavigationControllerDelegate {
 
-  
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var searchBar: UISearchBar!
   
@@ -47,7 +46,6 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return self.users.count
   }
-  
   //MARK: delegate search bar
   
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {

@@ -70,7 +70,6 @@ class NetworkController {
     dataTask.resume()
   }
   
-  
   // callback param linked with callback below
   func fetchSearchTermRepositories(searchTerm: String, callback : ([Repository], String?) -> (Void)) {
     let url = NSURL(string: "https://api.github.com/search/repositories?q=\(searchTerm)")
@@ -123,8 +122,7 @@ class NetworkController {
                     callback(users, nil)
                   })
                 }
-            }
-            
+              }
             default:
               println("default case on user search, status code : \(httpResponse.statusCode)")
           }
@@ -146,15 +144,7 @@ class NetworkController {
       })
     }
   }
-  
-  
 }
-
-
-
-
-
-
 
 /* fetchSearchTermRepositories from Mon-Tues ending 1.20.15
 

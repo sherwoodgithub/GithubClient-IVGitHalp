@@ -18,9 +18,10 @@ class WebViewController : UIViewController {
     self.webView.frame = self.view.frame
     self.view.addSubview(self.webView)
     let request = NSURLRequest(URL: NSURL(string: self.url)!)
-    self.view.loadRequest(request)
+    self.webView.loadRequest(request)
   }
-  override func didRecieveMemoryWarning() {
+  override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
   }
 }

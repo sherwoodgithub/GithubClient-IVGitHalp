@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   let networkController = NetworkController()
 
   func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-    //print(url)
     NetworkController.sharedNetworkController.urlHandler(url)
     return true
   }

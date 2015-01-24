@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B827A02C1A71CD6B00C43C26 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B827A02B1A71CD6B00C43C26 /* UserCell.xib */; };
 		B8B9CFBA1A6DB52F007E00F1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9CFB91A6DB52F007E00F1 /* Repository.swift */; };
 		B8CDBDDA1A7072FF0033CAB1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CDBDD91A7072FF0033CAB1 /* UserCell.swift */; };
 		B8DB0B911A7068ED00401F98 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB0B901A7068ED00401F98 /* UserModel.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B827A02B1A71CD6B00C43C26 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		B8B9CFB91A6DB52F007E00F1 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		B8CDBDD91A7072FF0033CAB1 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B8DB0B901A7068ED00401F98 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -92,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B8DB0B901A7068ED00401F98 /* UserModel.swift */,
-				B8CDBDD91A7072FF0033CAB1 /* UserCell.swift */,
 				B8B9CFB91A6DB52F007E00F1 /* Repository.swift */,
 			);
 			name = Model;
@@ -101,7 +102,9 @@
 		B8DB0B941A7068FB00401F98 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8CDBDD91A7072FF0033CAB1 /* UserCell.swift */,
 				B8FA204F1A6DA744004E9895 /* LaunchScreen.xib */,
+				B827A02B1A71CD6B00C43C26 /* UserCell.xib */,
 				B8FA204A1A6DA744004E9895 /* Main.storyboard */,
 			);
 			name = View;
@@ -245,6 +248,7 @@
 			files = (
 				B8FA204C1A6DA744004E9895 /* Main.storyboard in Resources */,
 				B8FA20511A6DA744004E9895 /* LaunchScreen.xib in Resources */,
+				B827A02C1A71CD6B00C43C26 /* UserCell.xib in Resources */,
 				B8FA204E1A6DA744004E9895 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

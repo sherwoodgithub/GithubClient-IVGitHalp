@@ -17,5 +17,4 @@ struct UserModel {
     self.name = jsonDictionary["login"] as String
     self.userURL = jsonDictionary["avatar_url"] as String
   }
-
 }

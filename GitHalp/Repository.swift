@@ -18,6 +18,5 @@ struct Repository {
     self.name = json["name"] as String
     let ownerDictionary = json["owner"] as [String : AnyObject]
     self.author = ownerDictionary["login"] as String
-    
   }
 }
